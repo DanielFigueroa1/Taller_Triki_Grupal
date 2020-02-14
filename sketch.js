@@ -171,6 +171,23 @@ function Ganar(){
       }
 
 
+      
+       // Diagonal derecha a izquierda
+
+    if (tablero[2][0] != 0) {
+
+      if (tablero[2][0] == tablero[1][1] && tablero[1][1] == tablero[0][2]) {
+
+
+        pantalla = tablero[0][0];
+
+        gano = true;
+
+      }
+
+
+
+    }
 
     }
 
