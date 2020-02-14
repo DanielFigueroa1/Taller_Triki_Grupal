@@ -44,8 +44,8 @@ function draw() {
 
     case 1:
 
-      background(255, 0, 255);
-
+      background(124,185,232);
+      fill(255);
       textSize(50);
       text("Gana jugador 1", 150, 300);
 
@@ -56,9 +56,9 @@ function draw() {
 
     case 2:
 
+      background(191,179,255);
+      fill(255);
       textSize(50);
-
-      background(255, 0, 255);
       text("Gana jugador 2", 150, 300)
 
       Reset();
