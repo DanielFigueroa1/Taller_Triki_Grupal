@@ -128,17 +128,50 @@ function Ganar(){
 
       }
 
-
-
     }
+
+    
 
 
 
   }
 
 
+  for (let i = 0; i < 3; i++) {
+
+    //Horizontal
+
+    if (tablero[0][i] != 0) {
+
+      if (tablero[0][i] == tablero[1][i] && tablero[1][i] == tablero[2][i]) {
+
+        pantalla = tablero[0][i]
+
+        gano = true;
+
+      }
+
+    }
+
+  }
+  for (let i = 0; i < 3; i++) {
+
+    //Diagonal izquierda a derecha
+
+    if (tablero[0][0] != 0) {
+
+      if (tablero[0][0] == tablero[1][1] && tablero[1][1] == tablero[2][2]) {
 
 
+        pantalla = tablero[0][0];
+
+        gano = true;
+
+      }
+
+
+
+    }
 
 
 
