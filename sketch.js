@@ -6,10 +6,31 @@ let tablero = [
 ]
 
 let figuras = [];
+let player;
+let w;
+let gano;
+let pantalla;
 
 function setup() {
 
   createCanvas(600, 600);
+
+  pantalla = 3;
+
+  player = 1;
+ 
+  w = width / 3;
+
+  for (let i = 0; i < 3; i++) {
+
+    for (let j = 0; j < 3; j++) {
+      
+
+      rect(i * w, j * w, w, w);
+
+    }
+
+  }
  
 
 
