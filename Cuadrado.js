@@ -15,7 +15,7 @@ class Cuadro extends Figura{
  
  Pintar(){
     
-    fill(240);
+      fill(240);
      rectMode(CENTER);
      rect(this.x,this.y,100,100);
     

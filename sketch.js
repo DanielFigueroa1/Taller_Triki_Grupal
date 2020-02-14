@@ -31,8 +31,6 @@ function setup() {
     }
 
   }
- 
-
 
 }
 
@@ -89,16 +87,13 @@ function draw() {
 }
 
 function mousePressed() {
+
   if (pantalla ==3) {
 
 
 
-
-  
-
-    
-
     //convierte la posicion del mouse en una casilla del triki
+    
     let fila = int(mouseX / w);
     let colum = int(mouseY / w);
   
@@ -113,7 +108,9 @@ function mousePressed() {
         tablero[fila][colum] = 1;
         player *= -1;
   
-      } else {
+      } 
+      
+      else {
   
         figuras.push(new Cuadro((fila * w) + 100, (colum * w) + 100));
         tablero[fila][colum] = 2;
@@ -133,15 +130,21 @@ function mousePressed() {
 }
 
 
-function Ganar(){
+
+
+function Ganar() {
+
 
   for (let i = 0; i < 3; i++) {
 
-    //Verifica si se gana de forma vertical
+    //Vertical
 
     if (tablero[i][0] != 0) {
 
       if (tablero[i][0] == tablero[i][1] && tablero[i][1] == tablero[i][2]) {
+
+
+        //text("gana jugador " + tablero[i][0], 300, 300);
 
         pantalla = tablero[i][0];
 
@@ -149,13 +152,14 @@ function Ganar(){
 
       }
 
-    }
 
-    
+
+    }
 
 
 
   }
+
 
 
   for (let i = 0; i < 3; i++) {
@@ -172,10 +176,14 @@ function Ganar(){
 
       }
 
+
+
     }
 
+
+
   }
-  
+
   for (let i = 0; i < 3; i++) {
 
     //Diagonal izquierda a derecha
@@ -192,8 +200,11 @@ function Ganar(){
       }
 
 
-      
-       // Diagonal derecha a izquierda
+
+    }
+
+
+    // Diagonal derecha a izquierda
 
     if (tablero[2][0] != 0) {
 
@@ -210,12 +221,15 @@ function Ganar(){
 
     }
 
-    }
+
+
 
   }
 
 
+
 }
+
 
 function Reset() {
 
