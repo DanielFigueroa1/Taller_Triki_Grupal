@@ -11,7 +11,7 @@ class Circulo extends Figura {
     Pintar(){
     
       
-      fill(0);
+      fill(180);
       
       ellipse(this.x,this.y,100,100);
     
