@@ -155,7 +155,26 @@ function Ganar(){
 
   }
   
-  
+  for (let i = 0; i < 3; i++) {
+
+    //Diagonal izquierda a derecha
+
+    if (tablero[0][0] != 0) {
+
+      if (tablero[0][0] == tablero[1][1] && tablero[1][1] == tablero[2][2]) {
+
+
+        pantalla = tablero[0][0];
+
+        gano = true;
+
+      }
+
+
+
+    }
+
+  }
 
 
 }
