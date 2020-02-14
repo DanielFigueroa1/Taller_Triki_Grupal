@@ -10,6 +10,8 @@ let figuras = [];
 function setup() {
 
   createCanvas(600, 600);
+ 
+
 
 }
 
@@ -66,6 +68,46 @@ function draw() {
 }
 
 function mousePressed() {
+  if (pantalla ==3) {
+
+
+
+
+  
+
+    
+
+    //convierte la posicion del mouse en una casilla del triki
+    let fila = int(mouseX / w);
+    let colum = int(mouseY / w);
+  
+  
+  
+    if (tablero[fila][colum] == 0) {
+  
+  
+      if (player == 1) {
+  
+        figuras.push(new Circulo((fila * w) + 100, (colum * w) + 100));
+        tablero[fila][colum] = 1;
+        player *= -1;
+  
+      } else {
+  
+        figuras.push(new Cuadro((fila * w) + 100, (colum * w) + 100));
+        tablero[fila][colum] = 2;
+        player *= -1;
+  
+  
+  
+      }
+  
+  
+  
+  
+    }
+    }
+  
 
 }
 
