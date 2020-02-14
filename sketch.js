@@ -111,6 +111,41 @@ function mousePressed() {
 
 }
 
+
+function Ganar(){
+
+  for (let i = 0; i < 3; i++) {
+
+    //Verifica si se gana de forma vertical
+
+    if (tablero[i][0] != 0) {
+
+      if (tablero[i][0] == tablero[i][1] && tablero[i][1] == tablero[i][2]) {
+
+        pantalla = tablero[i][0];
+
+        gano = true;
+
+      }
+
+
+
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+}
+
 function Reset() {
 
 
